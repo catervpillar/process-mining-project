@@ -1,0 +1,594 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="net1" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <page id="n0">
+      <place id="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})">
+        <name>
+          <text>({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})</text>
+        </name>
+      </place>
+      <place id="end">
+        <name>
+          <text>end</text>
+        </name>
+      </place>
+      <place id="({'W_Beoordelen fraudeSCHEDULE'}, {'W_Beoordelen fraudeSTART'})">
+        <name>
+          <text>({'W_Beoordelen fraudeSCHEDULE'}, {'W_Beoordelen fraudeSTART'})</text>
+        </name>
+      </place>
+      <place id="({'W_Beoordelen fraudeCOMPLETE'}, {'W_Afhandelen leadsSTART', 'W_Valideren aanvraagSTART'})">
+        <name>
+          <text>({'W_Beoordelen fraudeCOMPLETE'}, {'W_Afhandelen leadsSTART', 'W_Valideren aanvraagSTART'})</text>
+        </name>
+      </place>
+      <place id="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'A_PREACCEPTEDCOMPLETE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})">
+        <name>
+          <text>({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'A_PREACCEPTEDCOMPLETE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})</text>
+        </name>
+      </place>
+      <place id="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'O_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})">
+        <name>
+          <text>({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'O_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})</text>
+        </name>
+      </place>
+      <place id="({'O_SENT_BACKCOMPLETE', 'W_Beoordelen fraudeSTART'}, {'W_Completeren aanvraagSCHEDULE', 'W_Valideren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE'})">
+        <name>
+          <text>({'O_SENT_BACKCOMPLETE', 'W_Beoordelen fraudeSTART'}, {'W_Completeren aanvraagSCHEDULE', 'W_Valideren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE'})</text>
+        </name>
+      </place>
+      <place id="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})">
+        <name>
+          <text>({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})</text>
+        </name>
+      </place>
+      <place id="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})">
+        <name>
+          <text>({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})</text>
+        </name>
+      </place>
+      <place id="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})">
+        <name>
+          <text>({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})</text>
+        </name>
+      </place>
+      <place id="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'O_SENT_BACKCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})">
+        <name>
+          <text>({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'O_SENT_BACKCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})</text>
+        </name>
+      </place>
+      <place id="({'A_ACCEPTEDCOMPLETE', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'A_CANCELLEDCOMPLETE'})">
+        <name>
+          <text>({'A_ACCEPTEDCOMPLETE', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'A_CANCELLEDCOMPLETE'})</text>
+        </name>
+      </place>
+      <place id="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})">
+        <name>
+          <text>({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})</text>
+        </name>
+      </place>
+      <place id="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})">
+        <name>
+          <text>({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})</text>
+        </name>
+      </place>
+      <place id="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'O_ACCEPTEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})">
+        <name>
+          <text>({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'O_ACCEPTEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})</text>
+        </name>
+      </place>
+      <place id="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'O_DECLINEDCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})">
+        <name>
+          <text>({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'O_DECLINEDCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})</text>
+        </name>
+      </place>
+      <place id="start">
+        <name>
+          <text>start</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <place id="({'O_SELECTEDCOMPLETE'}, {'O_CREATEDCOMPLETE'})">
+        <name>
+          <text>({'O_SELECTEDCOMPLETE'}, {'O_CREATEDCOMPLETE'})</text>
+        </name>
+      </place>
+      <place id="({'O_CREATEDCOMPLETE'}, {'O_SENTCOMPLETE'})">
+        <name>
+          <text>({'O_CREATEDCOMPLETE'}, {'O_SENTCOMPLETE'})</text>
+        </name>
+      </place>
+      <place id="({'W_Nabellen offertesSCHEDULE', 'O_CANCELLEDCOMPLETE', 'A_FINALIZEDCOMPLETE'}, {'O_CREATEDCOMPLETE'})">
+        <name>
+          <text>({'W_Nabellen offertesSCHEDULE', 'O_CANCELLEDCOMPLETE', 'A_FINALIZEDCOMPLETE'}, {'O_CREATEDCOMPLETE'})</text>
+        </name>
+      </place>
+      <place id="({'A_PREACCEPTEDCOMPLETE', 'W_Beoordelen fraudeSTART'}, {'W_Completeren aanvraagSCHEDULE', 'W_Valideren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE'})">
+        <name>
+          <text>({'A_PREACCEPTEDCOMPLETE', 'W_Beoordelen fraudeSTART'}, {'W_Completeren aanvraagSCHEDULE', 'W_Valideren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE'})</text>
+        </name>
+      </place>
+      <place id="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})">
+        <name>
+          <text>({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})</text>
+        </name>
+      </place>
+      <place id="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'W_Completeren aanvraagSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})">
+        <name>
+          <text>({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'W_Completeren aanvraagSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})</text>
+        </name>
+      </place>
+      <place id="({'A_SUBMITTEDCOMPLETE'}, {'A_PARTLYSUBMITTEDCOMPLETE'})">
+        <name>
+          <text>({'A_SUBMITTEDCOMPLETE'}, {'A_PARTLYSUBMITTEDCOMPLETE'})</text>
+        </name>
+      </place>
+      <place id="({'W_Valideren aanvraagSCHEDULE'}, {'W_Valideren aanvraagSTART'})">
+        <name>
+          <text>({'W_Valideren aanvraagSCHEDULE'}, {'W_Valideren aanvraagSTART'})</text>
+        </name>
+      </place>
+      <place id="({'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE'}, {'W_Afhandelen leadsSTART'})">
+        <name>
+          <text>({'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE'}, {'W_Afhandelen leadsSTART'})</text>
+        </name>
+      </place>
+      <place id="({'O_SELECTEDCOMPLETE', 'O_SENTCOMPLETE'}, {'W_Nabellen incomplete dossiersSCHEDULE', 'W_Nabellen offertesSCHEDULE'})">
+        <name>
+          <text>({'O_SELECTEDCOMPLETE', 'O_SENTCOMPLETE'}, {'W_Nabellen incomplete dossiersSCHEDULE', 'W_Nabellen offertesSCHEDULE'})</text>
+        </name>
+      </place>
+      <place id="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'A_PREACCEPTEDCOMPLETE'})">
+        <name>
+          <text>({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'A_PREACCEPTEDCOMPLETE'})</text>
+        </name>
+      </place>
+      <place id="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})">
+        <name>
+          <text>({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})</text>
+        </name>
+      </place>
+      <place id="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Beoordelen fraudeSTART'}, {'W_Beoordelen fraudeSCHEDULE', 'W_Completeren aanvraagSCHEDULE', 'W_Valideren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE'})">
+        <name>
+          <text>({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Beoordelen fraudeSTART'}, {'W_Beoordelen fraudeSCHEDULE', 'W_Completeren aanvraagSCHEDULE', 'W_Valideren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE'})</text>
+        </name>
+      </place>
+      <place id="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})">
+        <name>
+          <text>({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})</text>
+        </name>
+      </place>
+      <transition id="W_Nabellen incomplete dossiersSTART">
+        <name>
+          <text>W_Nabellen incomplete dossiersSTART</text>
+        </name>
+      </transition>
+      <transition id="W_Nabellen incomplete dossiersSCHEDULE">
+        <name>
+          <text>W_Nabellen incomplete dossiersSCHEDULE</text>
+        </name>
+      </transition>
+      <transition id="W_Wijzigen contractgegevensSCHEDULE">
+        <name>
+          <text>W_Wijzigen contractgegevensSCHEDULE</text>
+        </name>
+      </transition>
+      <transition id="W_Completeren aanvraagSCHEDULE">
+        <name>
+          <text>W_Completeren aanvraagSCHEDULE</text>
+        </name>
+      </transition>
+      <transition id="A_CANCELLEDCOMPLETE">
+        <name>
+          <text>A_CANCELLEDCOMPLETE</text>
+        </name>
+      </transition>
+      <transition id="W_Completeren aanvraagSTART">
+        <name>
+          <text>W_Completeren aanvraagSTART</text>
+        </name>
+      </transition>
+      <transition id="W_Valideren aanvraagCOMPLETE">
+        <name>
+          <text>W_Valideren aanvraagCOMPLETE</text>
+        </name>
+      </transition>
+      <transition id="A_SUBMITTEDCOMPLETE">
+        <name>
+          <text>A_SUBMITTEDCOMPLETE</text>
+        </name>
+      </transition>
+      <transition id="W_Valideren aanvraagSCHEDULE">
+        <name>
+          <text>W_Valideren aanvraagSCHEDULE</text>
+        </name>
+      </transition>
+      <transition id="O_SENT_BACKCOMPLETE">
+        <name>
+          <text>O_SENT_BACKCOMPLETE</text>
+        </name>
+      </transition>
+      <transition id="W_Beoordelen fraudeCOMPLETE">
+        <name>
+          <text>W_Beoordelen fraudeCOMPLETE</text>
+        </name>
+      </transition>
+      <transition id="W_Nabellen offertesSCHEDULE">
+        <name>
+          <text>W_Nabellen offertesSCHEDULE</text>
+        </name>
+      </transition>
+      <transition id="W_Nabellen offertesSTART">
+        <name>
+          <text>W_Nabellen offertesSTART</text>
+        </name>
+      </transition>
+      <transition id="O_ACCEPTEDCOMPLETE">
+        <name>
+          <text>O_ACCEPTEDCOMPLETE</text>
+        </name>
+      </transition>
+      <transition id="W_Beoordelen fraudeSCHEDULE">
+        <name>
+          <text>W_Beoordelen fraudeSCHEDULE</text>
+        </name>
+      </transition>
+      <transition id="W_Beoordelen fraudeSTART">
+        <name>
+          <text>W_Beoordelen fraudeSTART</text>
+        </name>
+      </transition>
+      <transition id="O_DECLINEDCOMPLETE">
+        <name>
+          <text>O_DECLINEDCOMPLETE</text>
+        </name>
+      </transition>
+      <transition id="W_Valideren aanvraagSTART">
+        <name>
+          <text>W_Valideren aanvraagSTART</text>
+        </name>
+      </transition>
+      <transition id="A_APPROVEDCOMPLETE">
+        <name>
+          <text>A_APPROVEDCOMPLETE</text>
+        </name>
+      </transition>
+      <transition id="A_FINALIZEDCOMPLETE">
+        <name>
+          <text>A_FINALIZEDCOMPLETE</text>
+        </name>
+      </transition>
+      <transition id="W_Afhandelen leadsSTART">
+        <name>
+          <text>W_Afhandelen leadsSTART</text>
+        </name>
+      </transition>
+      <transition id="O_SELECTEDCOMPLETE">
+        <name>
+          <text>O_SELECTEDCOMPLETE</text>
+        </name>
+      </transition>
+      <transition id="A_ACTIVATEDCOMPLETE">
+        <name>
+          <text>A_ACTIVATEDCOMPLETE</text>
+        </name>
+      </transition>
+      <transition id="W_Afhandelen leadsSCHEDULE">
+        <name>
+          <text>W_Afhandelen leadsSCHEDULE</text>
+        </name>
+      </transition>
+      <transition id="W_Nabellen offertesCOMPLETE">
+        <name>
+          <text>W_Nabellen offertesCOMPLETE</text>
+        </name>
+      </transition>
+      <transition id="A_PARTLYSUBMITTEDCOMPLETE">
+        <name>
+          <text>A_PARTLYSUBMITTEDCOMPLETE</text>
+        </name>
+      </transition>
+      <transition id="A_DECLINEDCOMPLETE">
+        <name>
+          <text>A_DECLINEDCOMPLETE</text>
+        </name>
+      </transition>
+      <transition id="A_PREACCEPTEDCOMPLETE">
+        <name>
+          <text>A_PREACCEPTEDCOMPLETE</text>
+        </name>
+      </transition>
+      <transition id="W_Nabellen incomplete dossiersCOMPLETE">
+        <name>
+          <text>W_Nabellen incomplete dossiersCOMPLETE</text>
+        </name>
+      </transition>
+      <transition id="W_Afhandelen leadsCOMPLETE">
+        <name>
+          <text>W_Afhandelen leadsCOMPLETE</text>
+        </name>
+      </transition>
+      <transition id="A_REGISTEREDCOMPLETE">
+        <name>
+          <text>A_REGISTEREDCOMPLETE</text>
+        </name>
+      </transition>
+      <transition id="W_Completeren aanvraagCOMPLETE">
+        <name>
+          <text>W_Completeren aanvraagCOMPLETE</text>
+        </name>
+      </transition>
+      <transition id="O_CANCELLEDCOMPLETE">
+        <name>
+          <text>O_CANCELLEDCOMPLETE</text>
+        </name>
+      </transition>
+      <transition id="O_CREATEDCOMPLETE">
+        <name>
+          <text>O_CREATEDCOMPLETE</text>
+        </name>
+      </transition>
+      <transition id="A_ACCEPTEDCOMPLETE">
+        <name>
+          <text>A_ACCEPTEDCOMPLETE</text>
+        </name>
+      </transition>
+      <transition id="O_SENTCOMPLETE">
+        <name>
+          <text>O_SENTCOMPLETE</text>
+        </name>
+      </transition>
+      <arc id="2078067717648" source="A_PARTLYSUBMITTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Beoordelen fraudeSTART'}, {'W_Beoordelen fraudeSCHEDULE', 'W_Completeren aanvraagSCHEDULE', 'W_Valideren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE'})"/>
+      <arc id="2078041140256" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="O_SELECTEDCOMPLETE"/>
+      <arc id="2078070814224" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})" target="W_Afhandelen leadsSCHEDULE"/>
+      <arc id="2077838176272" source="W_Nabellen offertesCOMPLETE" target="end"/>
+      <arc id="2077838758416" source="O_SELECTEDCOMPLETE" target="({'O_SELECTEDCOMPLETE', 'O_SENTCOMPLETE'}, {'W_Nabellen incomplete dossiersSCHEDULE', 'W_Nabellen offertesSCHEDULE'})"/>
+      <arc id="2077838759952" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'A_PREACCEPTEDCOMPLETE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})" target="W_Afhandelen leadsSCHEDULE"/>
+      <arc id="2077838761488" source="W_Valideren aanvraagSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'O_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077838763024" source="W_Afhandelen leadsSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'O_DECLINEDCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077838764560" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="O_ACCEPTEDCOMPLETE"/>
+      <arc id="2077839716368" source="W_Afhandelen leadsSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'O_SENT_BACKCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077839717904" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="O_DECLINEDCOMPLETE"/>
+      <arc id="2077902685712" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'A_PREACCEPTEDCOMPLETE'})" target="A_PREACCEPTEDCOMPLETE"/>
+      <arc id="2077936341520" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="A_DECLINEDCOMPLETE"/>
+      <arc id="2078094368416" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'O_ACCEPTEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="W_Completeren aanvraagSCHEDULE"/>
+      <arc id="2077838176800" source="W_Completeren aanvraagCOMPLETE" target="end"/>
+      <arc id="2077838757408" source="({'W_Valideren aanvraagSCHEDULE'}, {'W_Valideren aanvraagSTART'})" target="W_Valideren aanvraagSTART"/>
+      <arc id="2077838758944" source="W_Beoordelen fraudeCOMPLETE" target="({'W_Beoordelen fraudeCOMPLETE'}, {'W_Afhandelen leadsSTART', 'W_Valideren aanvraagSTART'})"/>
+      <arc id="2077838760480" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'A_PREACCEPTEDCOMPLETE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})" target="A_ACTIVATEDCOMPLETE"/>
+      <arc id="2077838763552" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'O_DECLINEDCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="O_DECLINEDCOMPLETE"/>
+      <arc id="2077839716896" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'O_SENT_BACKCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="O_CANCELLEDCOMPLETE"/>
+      <arc id="2077902684704" source="A_PARTLYSUBMITTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'A_PREACCEPTEDCOMPLETE'})"/>
+      <arc id="2077902686240" source="({'A_ACCEPTEDCOMPLETE', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'A_CANCELLEDCOMPLETE'})" target="O_DECLINEDCOMPLETE"/>
+      <arc id="2077936340512" source="({'O_SENT_BACKCOMPLETE', 'W_Beoordelen fraudeSTART'}, {'W_Completeren aanvraagSCHEDULE', 'W_Valideren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE'})" target="W_Afhandelen leadsSCHEDULE"/>
+      <arc id="2077936342048" source="A_PARTLYSUBMITTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})"/>
+      <arc id="2077963702560" source="W_Nabellen offertesSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'W_Completeren aanvraagSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})"/>
+      <arc id="2078070814944" source="W_Afhandelen leadsSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2078070815760" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="O_CANCELLEDCOMPLETE"/>
+      <arc id="2078067716640" source="A_ACCEPTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2078067717456" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="W_Beoordelen fraudeSCHEDULE"/>
+      <arc id="2078041140064" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="W_Afhandelen leadsSCHEDULE"/>
+      <arc id="2078070814032" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})" target="O_SENT_BACKCOMPLETE"/>
+      <arc id="2077838762064" source="A_PARTLYSUBMITTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077838763600" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'O_DECLINEDCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="A_CANCELLEDCOMPLETE"/>
+      <arc id="2077838176848" source="W_Valideren aanvraagSTART" target="end"/>
+      <arc id="2077838758992" source="({'W_Beoordelen fraudeCOMPLETE'}, {'W_Afhandelen leadsSTART', 'W_Valideren aanvraagSTART'})" target="W_Afhandelen leadsSTART"/>
+      <arc id="2077839716944" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'O_SENT_BACKCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="O_SENT_BACKCOMPLETE"/>
+      <arc id="2077902684752" source="W_Afhandelen leadsSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'A_PREACCEPTEDCOMPLETE'})"/>
+      <arc id="2077902686288" source="({'A_ACCEPTEDCOMPLETE', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'A_CANCELLEDCOMPLETE'})" target="A_FINALIZEDCOMPLETE"/>
+      <arc id="2077936342096" source="W_Afhandelen leadsSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})"/>
+      <arc id="2077963701840" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})" target="A_ACTIVATEDCOMPLETE"/>
+      <arc id="2078041140304" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="W_Beoordelen fraudeSCHEDULE"/>
+      <arc id="2078070814176" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})" target="W_Completeren aanvraagSCHEDULE"/>
+      <arc id="2077838761056" source="({'A_PREACCEPTEDCOMPLETE', 'W_Beoordelen fraudeSTART'}, {'W_Completeren aanvraagSCHEDULE', 'W_Valideren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE'})" target="W_Afhandelen leadsSCHEDULE"/>
+      <arc id="2077838175840" source="start" target="A_SUBMITTEDCOMPLETE"/>
+      <arc id="2077838177376" source="O_CREATEDCOMPLETE" target="({'O_CREATEDCOMPLETE'}, {'O_SENTCOMPLETE'})"/>
+      <arc id="2077838759520" source="W_Nabellen offertesSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'A_PREACCEPTEDCOMPLETE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})"/>
+      <arc id="2077838762592" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="O_ACCEPTEDCOMPLETE"/>
+      <arc id="2077838764128" source="W_Afhandelen leadsSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077839717472" source="W_Nabellen offertesSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077902685280" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'A_PREACCEPTEDCOMPLETE'})" target="O_CANCELLEDCOMPLETE"/>
+      <arc id="2077936341088" source="A_ACCEPTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077963702368" source="A_PARTLYSUBMITTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'W_Completeren aanvraagSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})"/>
+      <arc id="2078067718176" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Beoordelen fraudeSTART'}, {'W_Beoordelen fraudeSCHEDULE', 'W_Completeren aanvraagSCHEDULE', 'W_Valideren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE'})" target="W_Valideren aanvraagSCHEDULE"/>
+      <arc id="2078070815568" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="W_Afhandelen leadsSCHEDULE"/>
+      <arc id="2077963703184" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'W_Completeren aanvraagSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})" target="O_SELECTEDCOMPLETE"/>
+      <arc id="2078067717264" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="A_DECLINEDCOMPLETE"/>
+      <arc id="2078041139872" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="W_Completeren aanvraagSCHEDULE"/>
+      <arc id="2077936340176" source="W_Nabellen offertesSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})"/>
+      <arc id="2077963701456" source="W_Valideren aanvraagSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})"/>
+      <arc id="2078070813840" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="W_Beoordelen fraudeSCHEDULE"/>
+      <arc id="2078094368224" source="A_ACCEPTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'O_ACCEPTEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2078041140688" source="W_Nabellen offertesSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2078094368032" source="W_Nabellen offertesSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'O_ACCEPTEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077838177424" source="({'O_CREATEDCOMPLETE'}, {'O_SENTCOMPLETE'})" target="O_SENTCOMPLETE"/>
+      <arc id="2077838758032" source="W_Completeren aanvraagSCHEDULE" target="({'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE'}, {'W_Afhandelen leadsSTART'})"/>
+      <arc id="2077838759568" source="W_Beoordelen fraudeSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'A_PREACCEPTEDCOMPLETE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})"/>
+      <arc id="2077838762640" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="O_CANCELLEDCOMPLETE"/>
+      <arc id="2077838764176" source="W_Nabellen offertesSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077839717520" source="A_ACCEPTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077902685328" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'A_PREACCEPTEDCOMPLETE'})" target="W_Afhandelen leadsSCHEDULE"/>
+      <arc id="2077936341136" source="W_Valideren aanvraagSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077963702416" source="W_Afhandelen leadsSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'W_Completeren aanvraagSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})"/>
+      <arc id="2078041139344" source="W_Nabellen offertesSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2078094368848" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'O_ACCEPTEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="W_Beoordelen fraudeSCHEDULE"/>
+      <arc id="2078067717984" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Beoordelen fraudeSTART'}, {'W_Beoordelen fraudeSCHEDULE', 'W_Completeren aanvraagSCHEDULE', 'W_Valideren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE'})" target="W_Beoordelen fraudeSCHEDULE"/>
+      <arc id="2078070814560" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})" target="W_Beoordelen fraudeSCHEDULE"/>
+      <arc id="2077838761632" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'O_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="A_REGISTEREDCOMPLETE"/>
+      <arc id="2077838176416" source="W_Nabellen offertesSTART" target="end"/>
+      <arc id="2077838757024" source="W_Beoordelen fraudeSCHEDULE" target="({'W_Beoordelen fraudeSCHEDULE'}, {'W_Beoordelen fraudeSTART'})"/>
+      <arc id="2077838758560" source="O_SENTCOMPLETE" target="({'O_SELECTEDCOMPLETE', 'O_SENTCOMPLETE'}, {'W_Nabellen incomplete dossiersSCHEDULE', 'W_Nabellen offertesSCHEDULE'})"/>
+      <arc id="2077838763168" source="W_Nabellen offertesSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'O_DECLINEDCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077838760096" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'A_PREACCEPTEDCOMPLETE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})" target="O_SELECTEDCOMPLETE"/>
+      <arc id="2077838764704" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="A_CANCELLEDCOMPLETE"/>
+      <arc id="2077839716512" source="W_Nabellen offertesSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'O_SENT_BACKCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077839718048" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="O_SELECTEDCOMPLETE"/>
+      <arc id="2077936340128" source="W_Beoordelen fraudeSTART" target="({'O_SENT_BACKCOMPLETE', 'W_Beoordelen fraudeSTART'}, {'W_Completeren aanvraagSCHEDULE', 'W_Valideren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE'})"/>
+      <arc id="2077936341712" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="A_FINALIZEDCOMPLETE"/>
+      <arc id="2077963702992" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'W_Completeren aanvraagSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})" target="A_CANCELLEDCOMPLETE"/>
+      <arc id="2078070815376" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="A_REGISTEREDCOMPLETE"/>
+      <arc id="2078067717072" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="O_ACCEPTEDCOMPLETE"/>
+      <arc id="2078041139680" source="W_Valideren aanvraagSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077963701264" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'W_Completeren aanvraagSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})" target="W_Beoordelen fraudeSCHEDULE"/>
+      <arc id="2078041140496" source="A_PARTLYSUBMITTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2078041138768" source="W_Beoordelen fraudeSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2078094367840" source="A_PARTLYSUBMITTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'O_ACCEPTEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2078094368656" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'O_ACCEPTEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="A_DECLINEDCOMPLETE"/>
+      <arc id="2077838761680" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'O_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="O_DECLINEDCOMPLETE"/>
+      <arc id="2077838763216" source="A_ACCEPTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'O_DECLINEDCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077838176464" source="W_Valideren aanvraagCOMPLETE" target="end"/>
+      <arc id="2077838757072" source="({'W_Beoordelen fraudeSCHEDULE'}, {'W_Beoordelen fraudeSTART'})" target="W_Beoordelen fraudeSTART"/>
+      <arc id="2077838758608" source="({'O_SELECTEDCOMPLETE', 'O_SENTCOMPLETE'}, {'W_Nabellen incomplete dossiersSCHEDULE', 'W_Nabellen offertesSCHEDULE'})" target="W_Nabellen incomplete dossiersSCHEDULE"/>
+      <arc id="2077838760144" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'A_PREACCEPTEDCOMPLETE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})" target="W_Beoordelen fraudeSCHEDULE"/>
+      <arc id="2077838764752" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="O_SELECTEDCOMPLETE"/>
+      <arc id="2077839716560" source="W_Valideren aanvraagSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'O_SENT_BACKCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077839718096" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="A_ACTIVATEDCOMPLETE"/>
+      <arc id="2077902685904" source="A_ACCEPTEDCOMPLETE" target="({'A_ACCEPTEDCOMPLETE', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'A_CANCELLEDCOMPLETE'})"/>
+      <arc id="2078067717792" source="W_Afhandelen leadsSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Beoordelen fraudeSTART'}, {'W_Beoordelen fraudeSCHEDULE', 'W_Completeren aanvraagSCHEDULE', 'W_Valideren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE'})"/>
+      <arc id="2078070814368" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})" target="A_DECLINEDCOMPLETE"/>
+      <arc id="2078067718608" source="W_Nabellen offertesSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})"/>
+      <arc id="2077838760672" source="A_PREACCEPTEDCOMPLETE" target="({'A_PREACCEPTEDCOMPLETE', 'W_Beoordelen fraudeSTART'}, {'W_Completeren aanvraagSCHEDULE', 'W_Valideren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE'})"/>
+      <arc id="2077838757600" source="W_Nabellen offertesSCHEDULE" target="({'W_Nabellen offertesSCHEDULE', 'O_CANCELLEDCOMPLETE', 'A_FINALIZEDCOMPLETE'}, {'O_CREATEDCOMPLETE'})"/>
+      <arc id="2077838759136" source="({'W_Beoordelen fraudeCOMPLETE'}, {'W_Afhandelen leadsSTART', 'W_Valideren aanvraagSTART'})" target="W_Valideren aanvraagSTART"/>
+      <arc id="2077838762208" source="W_Afhandelen leadsSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077838763744" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'O_DECLINEDCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="O_SELECTEDCOMPLETE"/>
+      <arc id="2077839717088" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'O_SENT_BACKCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="W_Beoordelen fraudeSCHEDULE"/>
+      <arc id="2077902684896" source="W_Nabellen offertesSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'A_PREACCEPTEDCOMPLETE'})"/>
+      <arc id="2077902686432" source="({'A_ACCEPTEDCOMPLETE', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'A_CANCELLEDCOMPLETE'})" target="A_CANCELLEDCOMPLETE"/>
+      <arc id="2077936340704" source="A_PARTLYSUBMITTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077963701984" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})" target="A_FINALIZEDCOMPLETE"/>
+      <arc id="2077963702800" source="W_Valideren aanvraagSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'W_Completeren aanvraagSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})"/>
+      <arc id="2078041139488" source="W_Beoordelen fraudeSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2078067716880" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="W_Completeren aanvraagSCHEDULE"/>
+      <arc id="2078094368464" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'O_ACCEPTEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="O_ACCEPTEDCOMPLETE"/>
+      <arc id="2077838177040" source="A_SUBMITTEDCOMPLETE" target="({'A_SUBMITTEDCOMPLETE'}, {'A_PARTLYSUBMITTEDCOMPLETE'})"/>
+      <arc id="2077838757648" source="O_CANCELLEDCOMPLETE" target="({'W_Nabellen offertesSCHEDULE', 'O_CANCELLEDCOMPLETE', 'A_FINALIZEDCOMPLETE'}, {'O_CREATEDCOMPLETE'})"/>
+      <arc id="2077838760720" source="W_Beoordelen fraudeSTART" target="({'A_PREACCEPTEDCOMPLETE', 'W_Beoordelen fraudeSTART'}, {'W_Completeren aanvraagSCHEDULE', 'W_Valideren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE'})"/>
+      <arc id="2077838762256" source="W_Nabellen offertesSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077838763792" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'O_DECLINEDCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="W_Beoordelen fraudeSCHEDULE"/>
+      <arc id="2077902684944" source="W_Beoordelen fraudeSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'A_PREACCEPTEDCOMPLETE'})"/>
+      <arc id="2077936340752" source="W_Afhandelen leadsSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077963701792" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})" target="A_DECLINEDCOMPLETE"/>
+      <arc id="2077963702032" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})" target="W_Beoordelen fraudeSCHEDULE"/>
+      <arc id="2078041138960" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'W_Completeren aanvraagSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})" target="A_ACTIVATEDCOMPLETE"/>
+      <arc id="2078067718416" source="A_PARTLYSUBMITTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})"/>
+      <arc id="2077963702608" source="W_Beoordelen fraudeSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'W_Completeren aanvraagSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})"/>
+      <arc id="2078070814992" source="W_Nabellen offertesSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077838761248" source="A_PARTLYSUBMITTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'O_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077838176032" source="A_CANCELLEDCOMPLETE" target="end"/>
+      <arc id="2077838756640" source="O_SELECTEDCOMPLETE" target="({'O_SELECTEDCOMPLETE'}, {'O_CREATEDCOMPLETE'})"/>
+      <arc id="2077838758176" source="W_Afhandelen leadsSCHEDULE" target="({'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE'}, {'W_Afhandelen leadsSTART'})"/>
+      <arc id="2077838762784" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="W_Beoordelen fraudeSCHEDULE"/>
+      <arc id="2077838759712" source="A_ACCEPTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'A_PREACCEPTEDCOMPLETE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})"/>
+      <arc id="2077838764320" source="A_ACCEPTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077839717664" source="W_Valideren aanvraagSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077902685472" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'A_PREACCEPTEDCOMPLETE'})" target="A_DECLINEDCOMPLETE"/>
+      <arc id="2077936341280" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="W_Completeren aanvraagSCHEDULE"/>
+      <arc id="2078041139296" source="W_Afhandelen leadsSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2078067716688" source="W_Beoordelen fraudeSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})"/>
+      <arc id="2078041140112" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="A_DECLINEDCOMPLETE"/>
+      <arc id="2078070815712" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="A_DECLINEDCOMPLETE"/>
+      <arc id="2078094368272" source="W_Valideren aanvraagSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'O_ACCEPTEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2078067717408" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="O_SELECTEDCOMPLETE"/>
+      <arc id="2078070813984" source="W_Valideren aanvraagSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})"/>
+      <arc id="2077838176080" source="W_Afhandelen leadsCOMPLETE" target="end"/>
+      <arc id="2077838758224" source="({'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE'}, {'W_Afhandelen leadsSTART'})" target="W_Afhandelen leadsSTART"/>
+      <arc id="2077838759760" source="W_Valideren aanvraagSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'A_PREACCEPTEDCOMPLETE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})"/>
+      <arc id="2077838761296" source="W_Afhandelen leadsSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'O_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077838764368" source="W_Valideren aanvraagSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077838756688" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="W_Beoordelen fraudeSCHEDULE"/>
+      <arc id="2077839717712" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="O_SENT_BACKCOMPLETE"/>
+      <arc id="2077839716176" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="W_Beoordelen fraudeSCHEDULE"/>
+      <arc id="2077902685520" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'A_PREACCEPTEDCOMPLETE'})" target="A_ACTIVATEDCOMPLETE"/>
+      <arc id="2077936341328" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="A_CANCELLEDCOMPLETE"/>
+      <arc id="2078067718224" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Beoordelen fraudeSTART'}, {'W_Beoordelen fraudeSCHEDULE', 'W_Completeren aanvraagSCHEDULE', 'W_Valideren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE'})" target="W_Afhandelen leadsSCHEDULE"/>
+      <arc id="2078070814800" source="A_PARTLYSUBMITTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077838763360" source="W_Valideren aanvraagSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'O_DECLINEDCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077838760288" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'A_PREACCEPTEDCOMPLETE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})" target="A_PREACCEPTEDCOMPLETE"/>
+      <arc id="2077838761824" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'O_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="O_CANCELLEDCOMPLETE"/>
+      <arc id="2077838176608" source="A_DECLINEDCOMPLETE" target="end"/>
+      <arc id="2077838758752" source="({'O_SELECTEDCOMPLETE', 'O_SENTCOMPLETE'}, {'W_Nabellen incomplete dossiersSCHEDULE', 'W_Nabellen offertesSCHEDULE'})" target="W_Nabellen offertesSCHEDULE"/>
+      <arc id="2077839716704" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'O_SENT_BACKCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="O_DECLINEDCOMPLETE"/>
+      <arc id="2077902686048" source="W_Nabellen offertesSTART" target="({'A_ACCEPTEDCOMPLETE', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'A_CANCELLEDCOMPLETE'})"/>
+      <arc id="2077936340320" source="({'O_SENT_BACKCOMPLETE', 'W_Beoordelen fraudeSTART'}, {'W_Completeren aanvraagSCHEDULE', 'W_Valideren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE'})" target="W_Completeren aanvraagSCHEDULE"/>
+      <arc id="2077936341856" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="W_Beoordelen fraudeSCHEDULE"/>
+      <arc id="2077963701600" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})" target="W_Completeren aanvraagSCHEDULE"/>
+      <arc id="2078041139920" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="A_CANCELLEDCOMPLETE"/>
+      <arc id="2078070815184" source="A_ACCEPTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2078070815520" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="W_Completeren aanvraagSCHEDULE"/>
+      <arc id="2078094368080" source="W_Beoordelen fraudeSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'O_ACCEPTEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077963703136" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'W_Completeren aanvraagSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})" target="W_Afhandelen leadsSCHEDULE"/>
+      <arc id="2078067717216" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="W_Afhandelen leadsSCHEDULE"/>
+      <arc id="2078070813792" source="A_ACCEPTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})"/>
+      <arc id="2077963701408" source="A_ACCEPTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})"/>
+      <arc id="2078067718032" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Beoordelen fraudeSTART'}, {'W_Beoordelen fraudeSCHEDULE', 'W_Completeren aanvraagSCHEDULE', 'W_Valideren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE'})" target="W_Completeren aanvraagSCHEDULE"/>
+      <arc id="2078041140640" source="W_Afhandelen leadsSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2078070814608" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})" target="O_CANCELLEDCOMPLETE"/>
+      <arc id="2077838176656" source="W_Nabellen incomplete dossiersCOMPLETE" target="end"/>
+      <arc id="2077838757264" source="W_Valideren aanvraagSCHEDULE" target="({'W_Valideren aanvraagSCHEDULE'}, {'W_Valideren aanvraagSTART'})"/>
+      <arc id="2077838760336" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'A_PREACCEPTEDCOMPLETE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})" target="A_DECLINEDCOMPLETE"/>
+      <arc id="2077838761872" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'O_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="W_Beoordelen fraudeSCHEDULE"/>
+      <arc id="2077838763408" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'O_DECLINEDCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="A_REGISTEREDCOMPLETE"/>
+      <arc id="2077839716752" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'O_SENT_BACKCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="A_ACTIVATEDCOMPLETE"/>
+      <arc id="2077902686096" source="W_Valideren aanvraagSTART" target="({'A_ACCEPTEDCOMPLETE', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'A_CANCELLEDCOMPLETE'})"/>
+      <arc id="2077902684560" source="O_SENT_BACKCOMPLETE" target="({'O_SENT_BACKCOMPLETE', 'W_Beoordelen fraudeSTART'}, {'W_Completeren aanvraagSCHEDULE', 'W_Valideren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE'})"/>
+      <arc id="2077936340368" source="({'O_SENT_BACKCOMPLETE', 'W_Beoordelen fraudeSTART'}, {'W_Completeren aanvraagSCHEDULE', 'W_Valideren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE'})" target="W_Valideren aanvraagSCHEDULE"/>
+      <arc id="2077963701648" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})" target="W_Afhandelen leadsSCHEDULE"/>
+      <arc id="2078041138912" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'W_Completeren aanvraagSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})" target="A_DECLINEDCOMPLETE"/>
+      <arc id="2077838177184" source="({'A_SUBMITTEDCOMPLETE'}, {'A_PARTLYSUBMITTEDCOMPLETE'})" target="A_PARTLYSUBMITTEDCOMPLETE"/>
+      <arc id="2077838757792" source="A_FINALIZEDCOMPLETE" target="({'W_Nabellen offertesSCHEDULE', 'O_CANCELLEDCOMPLETE', 'A_FINALIZEDCOMPLETE'}, {'O_CREATEDCOMPLETE'})"/>
+      <arc id="2077838762400" source="W_Valideren aanvraagSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077838759328" source="A_PARTLYSUBMITTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'A_PREACCEPTEDCOMPLETE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})"/>
+      <arc id="2077838760864" source="({'A_PREACCEPTEDCOMPLETE', 'W_Beoordelen fraudeSTART'}, {'W_Completeren aanvraagSCHEDULE', 'W_Valideren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE'})" target="W_Completeren aanvraagSCHEDULE"/>
+      <arc id="2077839717280" source="A_PARTLYSUBMITTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077902685088" source="A_ACCEPTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'A_PREACCEPTEDCOMPLETE'})"/>
+      <arc id="2077936340896" source="W_Nabellen offertesSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077963702176" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})" target="O_CANCELLEDCOMPLETE"/>
+      <arc id="2078041139728" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="A_REGISTEREDCOMPLETE"/>
+      <arc id="2078094368800" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'O_ACCEPTEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="O_CANCELLEDCOMPLETE"/>
+      <arc id="2078070815328" source="W_Valideren aanvraagSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2078094367888" source="W_Afhandelen leadsSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'O_ACCEPTEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077936341664" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="A_ACTIVATEDCOMPLETE"/>
+      <arc id="2077963702944" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'W_Completeren aanvraagSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})" target="O_SENT_BACKCOMPLETE"/>
+      <arc id="2078067717024" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="A_CANCELLEDCOMPLETE"/>
+      <arc id="2077963701216" source="W_Beoordelen fraudeSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})"/>
+      <arc id="2078067717840" source="W_Beoordelen fraudeSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Beoordelen fraudeSTART'}, {'W_Beoordelen fraudeSCHEDULE', 'W_Completeren aanvraagSCHEDULE', 'W_Valideren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE'})"/>
+      <arc id="2078070814416" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})" target="A_ACTIVATEDCOMPLETE"/>
+      <arc id="2077838762448" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="O_DECLINEDCOMPLETE"/>
+      <arc id="2077838757840" source="({'W_Nabellen offertesSCHEDULE', 'O_CANCELLEDCOMPLETE', 'A_FINALIZEDCOMPLETE'}, {'O_CREATEDCOMPLETE'})" target="O_CREATEDCOMPLETE"/>
+      <arc id="2077838759376" source="W_Afhandelen leadsSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'A_PREACCEPTEDCOMPLETE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})"/>
+      <arc id="2077838760912" source="({'A_PREACCEPTEDCOMPLETE', 'W_Beoordelen fraudeSTART'}, {'W_Completeren aanvraagSCHEDULE', 'W_Valideren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE'})" target="W_Valideren aanvraagSCHEDULE"/>
+      <arc id="2077838763984" source="A_PARTLYSUBMITTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077839717328" source="W_Afhandelen leadsSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077902685136" source="W_Valideren aanvraagSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'A_PREACCEPTEDCOMPLETE'})"/>
+      <arc id="2077936340944" source="W_Beoordelen fraudeSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2078041138720" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'W_Completeren aanvraagSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})" target="W_Completeren aanvraagSCHEDULE"/>
+      <arc id="2078041139152" source="A_PARTLYSUBMITTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2078041139536" source="A_ACCEPTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2078094368608" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'O_ACCEPTEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="W_Afhandelen leadsSCHEDULE"/>
+      <arc id="2077838762976" source="A_PARTLYSUBMITTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'O_DECLINEDCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077838176224" source="O_CANCELLEDCOMPLETE" target="end"/>
+      <arc id="2077838756832" source="({'O_SELECTEDCOMPLETE'}, {'O_CREATEDCOMPLETE'})" target="O_CREATEDCOMPLETE"/>
+      <arc id="2077838759904" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'A_PREACCEPTEDCOMPLETE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})" target="A_CANCELLEDCOMPLETE"/>
+      <arc id="2077838761440" source="W_Nabellen offertesSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'O_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077838764512" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="O_DECLINEDCOMPLETE"/>
+      <arc id="2077839716320" source="A_PARTLYSUBMITTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Valideren aanvraagSTART'}, {'O_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'O_SENT_BACKCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077839717856" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'A_CANCELLEDCOMPLETE', 'O_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="A_CANCELLEDCOMPLETE"/>
+      <arc id="2077902685664" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'A_PREACCEPTEDCOMPLETE'})" target="W_Beoordelen fraudeSCHEDULE"/>
+      <arc id="2077936341472" source="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'A_FINALIZEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})" target="W_Afhandelen leadsSCHEDULE"/>
+      <arc id="2078067718560" source="W_Afhandelen leadsSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'O_CANCELLEDCOMPLETE'})"/>
+      <arc id="2078070815136" source="W_Beoordelen fraudeSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'A_REGISTEREDCOMPLETE', 'W_Completeren aanvraagSCHEDULE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_CANCELLEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+      <arc id="2077963702752" source="A_ACCEPTEDCOMPLETE" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'O_SENT_BACKCOMPLETE', 'A_CANCELLEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE', 'W_Completeren aanvraagSCHEDULE', 'A_DECLINEDCOMPLETE', 'A_ACTIVATEDCOMPLETE'})"/>
+      <arc id="2078067716832" source="W_Valideren aanvraagSTART" target="({'A_PARTLYSUBMITTEDCOMPLETE', 'W_Afhandelen leadsSTART', 'W_Nabellen offertesSTART', 'W_Beoordelen fraudeSTART', 'A_ACCEPTEDCOMPLETE', 'W_Valideren aanvraagSTART'}, {'W_Completeren aanvraagSCHEDULE', 'A_CANCELLEDCOMPLETE', 'O_ACCEPTEDCOMPLETE', 'W_Afhandelen leadsSCHEDULE', 'A_DECLINEDCOMPLETE', 'O_SELECTEDCOMPLETE', 'W_Beoordelen fraudeSCHEDULE'})"/>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="end">
+          <text>1</text>
+        </place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>
